@@ -18,6 +18,19 @@ describe('render', () => {
   });
 
   test('render happen', () => {
+    const componenttree = render(
+      <List
+        setpage={() => {}}
+        navigate={() => {}}
+        getjsondata={() => {}}
+        list={list}
+        page={page}
+      />
+    );
+    expect(componenttree).toMatchSnapshot();
+  });
+
+  test('render happen', () => {
     render(
       <List
         setpage={() => {}}

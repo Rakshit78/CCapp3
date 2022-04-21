@@ -59,6 +59,7 @@ export default function List<Props>({ ...props }): any {
                       <TableRow
                         key={objectID}
                         onClick={() => props.getjson(objectID)}
+                        role='json'
                       >
                         <TableCell>{story_title}</TableCell>
                         <TableCell>{author}</TableCell>
